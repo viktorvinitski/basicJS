@@ -1,4 +1,4 @@
-let password = prompt("Введите PIN", "4 или 6 цифр")
+
 
 function PIN(password){
 if ((password.length == 4 || password.length == 6) && parseInt(password)){
@@ -8,4 +8,4 @@ else{
     return false
 }
 }
-PIN();
+PIN("123456");
