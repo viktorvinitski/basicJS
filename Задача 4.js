@@ -1,30 +1,32 @@
-let firstString = prompt("Введите abcd")
-let newString = 
-    firstString[0].toUpperCase() + "-" +
-    firstString[1].toUpperCase() + "b-" +
-    firstString[2].toUpperCase() + "c".repeat(2) + "-" +
-    firstString[3].toUpperCase() + "d".repeat(3) 
-alert(newString)
+let firstString = prompt("asdasd")
+let newString = firstString
+.split('')
+.map((item,index) => item.toUpperCase() )
+.reduce((current,next,index) => current + '-' + next + next.repeat(index).toLowerCase())
 
-let first2String = prompt("Введите RqaEzty")
-let new2String = 
-    first2String[0] + "-" +
-    first2String[1].toUpperCase() + "q-" +
-    first2String[2].toUpperCase() + "a".repeat(2) + "-" +
-    first2String[3] + "e".repeat(3) + "-" +
-    first2String[4].toUpperCase() + "z".repeat(4) + "-" +
-    first2String[5].toUpperCase() + "t".repeat(5) + "-" +
-    first2String[6].toUpperCase() + "y".repeat(6)
 
-alert(new2String)
+console.log(newString)
 
-let first3String = prompt("Введите cwAt")
-let new3String = 
-    first3String[0].toUpperCase() + "-" +
-    first3String[1].toUpperCase() + "w-" +
-    first3String[2] + "a".repeat(2) + "-" +
-    first3String[3].toUpperCase() + "t".repeat(3) 
-alert(new3String)
+
+
+
+
+
+// let mainString = 
+//     newString[0].toUpperCase() + "-" +
+//     newString[1].toUpperCase() + newString[1].repeat(1).toLowerCase() + '-' +
+//     newString[2].toUpperCase() + newString[2].repeat(2).toLowerCase() + '-' + 
+//     newString[3].toUpperCase() + newString[3].repeat(3).toLowerCase() + '-' +
+//     newString[4].toUpperCase() + newString[4].repeat(4).toLowerCase() + '-' +
+//     newString[5].toUpperCase() + newString[5].repeat(5).toLowerCase() + '-' +
+//     newString[6].toUpperCase() + newString[6].repeat(6).toLowerCase() 
+// alert(mainString)
+
+
+
+//accum("abcd") -> "A-Bb-Ccc-Dddd"
+//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+//accum("cwAt") -> "C-Ww-Aaa-Tttt"
 
 
 
