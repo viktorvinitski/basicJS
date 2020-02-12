@@ -4,12 +4,14 @@ let andrei = { name: "Андрей", surname: "Петров", id: 3 };
 
 let persons = [ vitya, katya, andrei ];
 
-let personsMapped = persons.map(person => ({
+function transformToObjects(){
+    let personsMapped = persons.map(person => ({
     fullname: `${person.name} ${person.surname}`,
     id: person.id
 }))
-
-console.log(personsMapped)
+    return personsMapped
+}
+console.log(transformToObjects(persons))
 
 
 

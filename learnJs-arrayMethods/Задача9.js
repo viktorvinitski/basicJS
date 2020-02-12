@@ -4,6 +4,8 @@ let egor = { name: "Егор", age: 36 };
 
 let arr = [ dima, sasha, egor ]
 
-let sortByAge = arr.sort((a,b) => a.age-b.age)
-
-console.log(sortByAge)
+function sortByAge(){
+    let sortByAge = arr.sort((a,b) => a.age-b.age)
+    return sortByAge
+}
+console.log(sortByAge(arr))

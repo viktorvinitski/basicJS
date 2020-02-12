@@ -4,5 +4,9 @@ let marina = { name: "Марина", age: 29 };
 
 let arRay = [ zhenya, vova, marina ];
 
-let a = arRay.reduce((prevValue,currentValue) => prevValue + currentValue.age, 0)/arRay.length
-console.log(a)
+function getAverageAge(){
+    let a = arRay.reduce((prevValue,currentValue) => prevValue + currentValue.age, 0)/arRay.length
+    return a
+}
+
+console.log(getAverageAge(arRay))
