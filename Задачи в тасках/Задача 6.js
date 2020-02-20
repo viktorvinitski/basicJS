@@ -1,5 +1,4 @@
-let string = 'assssaabbbcdrrrrrssstttuuuwwxxyyyzzz'
-
+let string = 'assaabbbcdrrrssstttuuuwwxxyyyzzz'
 
 function printerError(){
 let wrongLetters = string
