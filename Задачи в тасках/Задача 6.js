@@ -1,7 +1,12 @@
-let string = 'aaabbbcccddd'
+let string = 'assssaabbbcdrrrrrssstttuuuwwxxyyyzzz'
 
+
+function printerError(){
 let wrongLetters = string
-.split('')
+.match(/n|o|p|q|r|s|t|u|v|w|x|y|z/g)
+let coeff = wrongLetters.length / string.split('').length
+return coeff
 
+}
 
-console.log(wrongLetters)
+console.log(printerError(string))
