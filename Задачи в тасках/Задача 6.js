@@ -1,9 +1,9 @@
-let string = 'assaabbbcdrrrssstttuuuwwxxyyyzzz'
+let string = 'assaabbbcdrrrssstttuuuwwxxyyyzzzaassssddeeqeqeqrrtrthgcg'
 
 function printerError(){
 let wrongLetters = string
 .match(/n|o|p|q|r|s|t|u|v|w|x|y|z/g)
-let coeff = wrongLetters.length / string.split('').length
+let coeff = wrongLetters.length + '/' + string.split('').length
 return coeff
 
 }
