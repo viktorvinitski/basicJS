@@ -4,8 +4,8 @@
 
 let strings = [1, 1, 1, 2, 1, 1]
 
-  function unique(item){
-    let uniqueElement = new Set(item)
+  function unique(arr){
+    let uniqueElement = new Set(arr)
     return [...uniqueElement]
 }
 
