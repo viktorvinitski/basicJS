@@ -1,12 +1,18 @@
-//findUniq([ 1, 1, 1, 2, 1, 1 ]) === 2
-//findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
+//ffindNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 
 
-let strings = [1, 1, 1, 2, 1, 1]
 
-  function unique(arr){
-    let uniqueElement = new Set(arr)
-    return [...uniqueElement]
-}
 
-console.log(unique(strings))
+let strings = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']
+
+  function ffindNeedle(arr){
+    let a = arr
+    return 'found the needle at position ' + a.indexOf("needle")
+    
+  }
+    
+    
+    
+
+
+console.log(ffindNeedle(strings))
