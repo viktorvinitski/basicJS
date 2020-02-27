@@ -2,11 +2,15 @@
 //findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
 
 
-let strings = [1, 1, 1, 2, 1, 1]
+let strings = [ 0, 0, 0.55, 0, 0 ]
 
-  function unique(item){
-    let uniqueElement = new Set(item)
-    return [...uniqueElement]
-}
-
-console.log(unique(strings))
+function stray(numbers) {
+  var sort = numbers.sort();
+  if (sort[0] === sort[1]) {
+    return sort[sort.length-1]
+  }  else {
+    return sort[0]
+  }
+    
+  }
+console.log(stray(strings))
