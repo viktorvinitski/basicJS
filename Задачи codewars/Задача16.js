@@ -1,8 +1,10 @@
-let arrOfNum = [2,3,4,5,6,7,1]
+let nums = [1,2,4,6,8,8]
 
-function removeSmallest(arrr){
-  let min = Math.min(...arrr)
-  return arrr.filter((a) => a != min) 
+function minValue(nuM){
+let newNum = nuM.filter((value,index) => nuM.indexOf(value) === index)
+.sort((a,b) => a-b)
+.join('')
+return parseInt(newNum)
 }
 
-console.log(removeSmallest(arrOfNum))
+console.log(minValue(nums))
